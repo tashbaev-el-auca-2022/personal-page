@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("https://cdn.imgchest.com/files/g4z9cwd2872.png");
+    opacity: .5;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    /* gap: 12px; */
+}
+
+.container > * {
+    background-color: lightblue;
+    font-size: 10rem;
+    color: blue;
+    border: 2px dashed blue;
+    flex-grow: 1;
+    flex-shrink: 1;
+    /* padding-bottom: 14px; */
+    /* Divs on the image have higher bottom than top, So padding is here to make the "purple pixel perfect". */
+}
+
+.box1{
+    flex: 1;
+}
+.box2{
+    flex: 5;
+} 
+
+.box3{
+    flex: 0 0 100%;
+} 
+.box4{
+    flex: 3;
+}
+.box5{
+    flex: 3;
+}
+.box6{
+    flex: 1;
+}
