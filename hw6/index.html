@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AUCA Academic Calendar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-logo">
+        <div class="logo-icon">
+          <span class="material-symbols-outlined icon-small">calendar_today</span>
+        </div>
+        <h1 class="logo-text">AUCA</h1>
+      </div>
+      <nav class="header-nav">
+        <a href="#" class="nav-link">Calendar</a>
+        <a href="#" class="nav-link">Tasks</a>
+        <a href="#" class="nav-link">Opportunities</a>
+        <a href="#" class="nav-link">Announcements</a>
+        <a href="#" class="nav-link">Support</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button">
+          <span class="material-symbols-outlined icon-medium">search</span>
+        </button>
+        <div class="profile-avatar">
+          <img
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMG5c2vQMiS_SheaXzeQfIvx926rCAhTt2HClYPuq0KLsB60CituNgvqEOcwiJBv5_itlYNU0EBbGpvvhywu_T-p8Wna9H-C7eoy2U-TfjQhKkuqllU2wTmvZxk4PTq0af-ddbeXv91dlauMf3PGUUbvAWw5GtG5gldH_iiygn677MLWhhDq43i7vJ4df4D_anaWy1kS6v4RMjshvsiaw2kTSfnX253dbM1tCSzCdksXKaiI4D4Mh0pNGO_riBiguI-FwdXIvr2ywz"
+            alt="User Profile">
+        </div>
+      </div>
+    </header>
+
+    <main class="main-layout">
+      <!-- Sidebar Left -->
+      <aside class="sidebar">
+        <!-- To-Do List -->
+        <section class="sidebar-section">
+          <div class="section-header">
+            <span class="material-symbols-outlined icon-small text-muted">check_box</span>
+            <h3 class="section-title">To-Do List</h3>
+          </div>
+          <ul class="task-list">
+            <li class="task-item">
+              <input type="checkbox" class="task-checkbox">
+              <span class="task-text">Submit Senior Thesis draft</span>
+            </li>
+            <li class="task-item">
+              <input type="checkbox" class="task-checkbox" checked>
+              <span class="task-text task-completed">Register for Spring classes</span>
+            </li>
+            <li class="task-item">
+              <input type="checkbox" class="task-checkbox">
+              <span class="task-text">Review Financial Aid docs</span>
+            </li>
+          </ul>
+          <button class="add-task-btn">
+            <span class="material-symbols-outlined icon-xsmall">add</span> Add a task
+          </button>
+        </section>
+
+        <!-- Upcoming Events -->
+        <section class="sidebar-section">
+          <div class="section-header">
+            <span class="material-symbols-outlined icon-small text-muted">event</span>
+            <h3 class="section-title">Upcoming Events</h3>
+          </div>
+          <div class="events-list">
+            <div class="event-card notion-shadow">
+              <p class="event-date">Oct 24</p>
+              <h4 class="event-title">Midterm Break Starts</h4>
+              <p class="event-location">All campus facilities</p>
+            </div>
+            <div class="event-card notion-shadow">
+              <p class="event-date">Nov 02</p>
+              <h4 class="event-title">Career Fair 2024</h4>
+              <p class="event-location">Main Lobby, 10:00 AM</p>
+            </div>
+          </div>
+        </section>
+      </aside>
+
+      <!-- Main Content Area -->
+      <div class="content-area">
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <div class="hero-text">
+            <h2 class="page-title">Academic Calendar</h2>
+            <p class="page-subtitle">Centralized schedule for American University of Central Asia. Stay informed about
+              deadlines, breaks, and campus events.</p>
+          </div>
+          <div class="search-container notion-shadow">
+            <span class="material-symbols-outlined search-icon">search</span>
+            <input type="text" class="search-input" placeholder="Search events, deadlines, or holidays...">
+          </div>
+        </section>
+
+        <!-- Quick Links Grid -->
+        <section class="quick-links-section">
+          <div class="section-header-row">
+            <h3 class="group-title">Quick Links</h3>
+            <button class="view-all-btn">View All</button>
+          </div>
+          <div class="links-grid">
+            <a href="#" class="link-card notion-shadow">
+              <div class="card-icon-wrapper">
+                <span class="material-symbols-outlined">menu_book</span>
+              </div>
+              <h4 class="card-title">Book WARC Sessions</h4>
+              <p class="card-description">Schedule peer-tutoring sessions for writing and academic relief.</p>
+            </a>
+            <a href="#" class="link-card notion-shadow">
+              <div class="card-icon-wrapper">
+                <span class="material-symbols-outlined">payments</span>
+              </div>
+              <h4 class="card-title">Scholarships & Aid</h4>
+              <p class="card-description">Check eligibility and application deadlines for financial support.</p>
+            </a>
+            <a href="#" class="link-card notion-shadow">
+              <div class="card-icon-wrapper">
+                <span class="material-symbols-outlined">wb_sunny</span>
+              </div>
+              <h4 class="card-title">Holiday Schedules</h4>
+              <p class="card-description">Official university closures and public holiday observations.</p>
+            </a>
+          </div>
+        </section>
+
+        <!-- Featured Image / Illustration -->
+        <section class="news-section">
+          <div class="section-header-row">
+            <h3 class="group-title">AUCA News & Announcements</h3>
+            <div class="carousel-controls">
+              <button class="carousel-btn">
+                <span class="material-symbols-outlined icon-small">chevron_left</span>
+              </button>
+              <button class="carousel-btn">
+                <span class="material-symbols-outlined icon-small">chevron_right</span>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-container notion-shadow">
+            <div class="carousel-slides">
+              <div class="carousel-slide">
+                <img
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5kRuZlQc2M2K2ffzi13AF9Q_2sBMS2sNrPxuvGC4-k-IAcpPBZ_UBaFZLpP8crs9fNuLBxnFeM8y1wSjfub2GoIRhR40sOw-ovr2VRAzLfLhv_OwFq6rwCHYPDlXlJyhz0aC_jYRFI_D0Ah__xWL9SMHX7w4O2NLo-OealWclEZOQAcZHXwkifghNJz3W_mA2OfEcgTLOcAWzsbjPNgdKAareVLQU6MrfnE7PRKKHIQ1dheOfz_cKlibKdBx2AqOFRtYPu7iwR2Zd"
+                  alt="University Campus" class="slide-image">
+                <div class="slide-content">
+                  <span class="slide-date">October 18, 2024</span>
+                  <h4 class="slide-title">New Research Grant Awarded</h4>
+                  <p class="slide-description">The Psychology department received a $50,000 grant for cognitive studies,
+                    opening new doors for student research opportunities.</p>
+                  <a href="#" class="read-story-btn">
+                    Read Story <span class="material-symbols-outlined icon-small">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-pagination">
+              <button class="dot active"></button>
+              <button class="dot"></button>
+              <button class="dot"></button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-info">
+        <p class="footer-copyright">© 2024 American University of Central Asia</p>
+        <p class="footer-address">7/2 Aaly Tokombaev St, Bishkek, Kyrgyzstan</p>
+      </div>
+      <div class="footer-links">
+        <a href="#" class="footer-icon-link">
+          <span class="material-symbols-outlined icon-medium">language</span>
+        </a>
+        <a href="#" class="footer-icon-link">
+          <span class="material-symbols-outlined icon-medium">mail</span>
+        </a>
+        <a href="#" class="footer-icon-link">
+          <span class="material-symbols-outlined icon-medium">chat</span>
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
