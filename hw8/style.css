@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    /* background-image: url(https://cdn.imgchest.com/files/j7mmcrepg76.png); */
+    background-repeat: no-repeat;
+    max-width: 1536px;
+    min-height: 1583px;
+    font-size: 2rem;
+    opacity: .5;
+    color: blue;
+}
+.container > * {
+    border: 2px dashed blue;
+}
+
+.container {
+    display: grid;
+    /* grid-template-rows: 35px 75px 855px 324px;    
+    grid-template-columns: 155px 477px 564px 339px; */
+    grid-template-rows: 
+        minmax(35px, 35px)
+        minmax(75px, 75px)
+        minmax(500px, 855px)
+        minmax(200px, 324px);
+
+    grid-template-columns: 
+        minmax(120px, 155px)
+        minmax(250px, 477px)
+        minmax(300px, 564px)
+        minmax(180px, 339px);
+    grid-template-areas: 
+        "one one one one"
+        "two five six seven"
+        "three three eight nine"
+        "four four eight nine";
+
+}
+.box1 {
+    grid-area: one;
+}
+.box2 {    
+    grid-area: two;
+}
+.box3 {    
+    grid-area: three;
+}
+.box4 {    
+    grid-area: four;
+}
+.box5 {    
+    grid-area: five;
+}
+.box6 {
+    grid-area: six;
+}
+.box7 {
+    grid-area: seven;
+}
+.box8 {    
+    grid-area: eight;
+}
+.box9 {
+    grid-area: nine;
+}
+
+html{
+    display: block;
+}
+.menu {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bolder;
+
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+
+    /* color: red; */
+    color: #000;
+    background-color: #ffffff;
+
+    padding: 0;
+    margin: 0;
+
+    max-width: 100%;
+    min-height: 100%;
+    align-items: center;
+
+    padding-bottom: 3px;
+}
+
+.super{
+    flex-basis: 183px;
+    padding-left: 90px;
+}
+.news{
+    flex-basis: 70px;
+
+}
+.music{
+    flex-basis: 77px;
+
+}
+.search{
+    flex-basis: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+
+        grid-template-rows: 
+            minmax(35px, 35px)
+            minmax(75px, 75px)
+            minmax(855px, 855px)
+            minmax(324px, 324px)
+            minmax(200px, auto)
+            minmax(200px, auto)
+            minmax(200px, auto)
+            minmax(200px, auto)
+            minmax(200px, auto);
+
+        grid-template-areas:
+            "one"
+            "two"
+            "five"
+            "six"
+            "seven"
+            "three"
+            "four"
+            "eight"
+            "nine";
+    }
+}
