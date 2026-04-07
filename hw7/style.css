@@ -17,7 +17,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 35px 75px 855px 324px 34px;    
+    grid-template-rows: 35px 75px 855px 324px;    
     grid-template-columns: 155px 477px 564px 339px;
     grid-template-areas: 
         "one one one one"
